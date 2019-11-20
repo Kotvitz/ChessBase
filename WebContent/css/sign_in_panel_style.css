@@ -1,0 +1,80 @@
+#page_content {
+    display: table;
+    width: 100%;
+}
+
+#page_content_inner {
+    display: table-row;
+}
+
+#page_middle_content {
+    min-height: 330px;
+    height: auto !important;
+    width: 797px;
+    margin: 0px auto;
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+}
+
+#sign_in_panel
+{
+	background-position: 72px center;
+	min-height: 240px;
+	height: auto !important;
+	height: 240px;
+	padding: 100px 75px 20px 75px;
+	width: 537px;
+}
+
+#sign_in_panel .login_field
+{
+	height:25px;
+	margin-left: 34px;
+	margin-bottom: 17px;
+	text-align: right;
+}
+
+#sign_in_panel .login_field .label
+{
+	float: left;
+}
+
+#sign_in_panel .login_field input[type=text],
+#sign_in_panel .login_field input[type=password]
+{
+	display: inline-block;
+	border: solid 1px #BABABA;
+	height: 23px;
+	width: 370px;
+}
+
+#sign_in_panel .login_as
+{
+	margin-top: 15px;
+	margin-left: 180px;
+}
+
+#sign_in_panel .login_as .label
+{
+	display: block;
+	margin-left: 15px;
+	float: left;
+	padding-top: 11px;
+}
+
+#sign_in_panel .login_as table
+{
+	margin-left: 3px;
+}
+
+#sign_in_panel .login_as table td
+{
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+#sign_in_panel .login_button, #sign_in_panel .register_link {
+	display: inline-block;
+    margin-left: 50px;
+}
