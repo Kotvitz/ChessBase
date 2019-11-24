@@ -17,18 +17,16 @@
 						<span id="sign_up" class="page_title">Please fill in this form to create an account</span>
 						<div class="center_content">
 							<div class="login_field">
-								<span id="login_label" class="label">E-mail:</span>
-								<input name="login_input" type="text" id="=text_ident" tabindex="1"><br>
-								<span id="valReqLogin" class="validator_error" style="color:Red;display:none;">Please enter your login!</span>
+								<span id="login_label" class="label">E-mail:<span class="req">*</span></span>
+								<input name="login_input" type="text" id="=text_ident" tabindex="1" required autocomplete="off"><br>
 							</div>
 							<div class="login_field">
-								<span id="pswd_label" class="label">Password:</span>
-								<input name="txtpswd" type="password" id="txtpswd" tabindex="2"><br>
-								<span id="valReqPswd" class="validator_error" style="color:Red;display:none;">Enter a password!</span>
+								<span id="pswd_label" class="label">Password:<span class="req">*</span></span>
+								<input name="txtpswd" type="password" id="txtpswd" tabindex="2" required autocomplete="off"><br>
 							</div>
 							<div class="login_field">
 								<span id="pswdrep_label" class="label">Repeat password:</span>
-								<input name="txtpswdrep" type="password" id="txtpswdrep" tabindex="2"><br>
+								<input name="txtpswdrep" type="password" id="txtpswdrep" tabindex="2" required autocomplete="off"><br>
 								<span id="valReqPswdMatch" class="validator_error" style="color:Red;display:none;">The passwords must match!</span>
 							</div>
 							<div class="login_field clear"></div>

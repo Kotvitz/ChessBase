@@ -17,14 +17,12 @@
 						<span id="sign_in" class="page_title">Chess base application</span>
 						<div class="center_content">
 							<div class="login_field">
-								<span id="email_label" class="label">E-mail:</span>
-								<input name="email_input" type="text" id="text_ident" tabindex="1"><br>
-								<span id="valReqLogin" class="validator_error" style="color:Red;display:none;">Please enter your e-mail address!</span>
+								<span id="email_label" class="label">E-mail:<span class="req">*</span></span>
+								<input name="email_input" type="text" id="text_ident" tabindex="1" required autocomplete="off"><br>
 							</div>
 							<div class="login_field">
-								<span id="pswd_label" class="label">Password:</span>
-								<input name="txtpswd" type="password" id="txtpswd" tabindex="2"><br>
-								<span id="valReqPswd" class="validator_error" style="color:Red;display:none;">Enter a password!</span>
+								<span id="pswd_label" class="label">Password:<span class="req">*</span></span>
+								<input name="txtpswd" type="password" id="txtpswd" tabindex="2" required autocomplete="off"><br>
 							</div>
 							<div class="login_field clear"></div>
 						</div>
