@@ -17,7 +17,7 @@
     padding: 20px;
 }
 
-#sign_in_panel
+#main_panel
 {
 	background-position: 72px center;
 	min-height: 240px;
@@ -27,7 +27,7 @@
 	width: 537px;
 }
 
-#sign_in_panel .login_field
+#main_panel .login_field
 {
 	height:25px;
 	margin-left: 34px;
@@ -35,13 +35,13 @@
 	text-align: right;
 }
 
-#sign_in_panel .login_field .label
+#main_panel .login_field .label
 {
 	float: left;
 }
 
-#sign_in_panel .login_field input[type=text],
-#sign_in_panel .login_field input[type=password]
+#main_panel .login_field input[type=text],
+#main_panel .login_field input[type=password]
 {
 	display: inline-block;
 	border: solid 1px #BABABA;
@@ -49,13 +49,13 @@
 	width: 370px;
 }
 
-#sign_in_panel .login_as
+#main_panel .login_as
 {
 	margin-top: 15px;
 	margin-left: 180px;
 }
 
-#sign_in_panel .login_as .label
+#main_panel .login_as .label
 {
 	display: block;
 	margin-left: 15px;
@@ -63,18 +63,18 @@
 	padding-top: 11px;
 }
 
-#sign_in_panel .login_as table
+#main_panel .login_as table
 {
 	margin-left: 3px;
 }
 
-#sign_in_panel .login_as table td
+#main_panel .login_as table td
 {
 	padding-top: 10px;
 	padding-right: 10px;
 }
 
-#sign_in_panel .login_button, #sign_in_panel .register_link {
+#main_panel .login_button, #main_panel .register_link {
 	display: inline-block;
     margin-left: 50px;
 }
