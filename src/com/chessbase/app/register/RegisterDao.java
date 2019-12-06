@@ -2,6 +2,8 @@ package com.chessbase.app.register;
 
 import java.sql.*;
 
+import com.chessbase.app.db.ConnectionProvider;
+
 public class RegisterDao {
 
 	public static int register(User u) {

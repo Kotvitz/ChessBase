@@ -1,4 +1,4 @@
-package com.chessbase.app.register;
+package com.chessbase.app.db;
 
 public interface Provider {
 	String DRIVER="com.mysql.cj.jdbc.Driver";
