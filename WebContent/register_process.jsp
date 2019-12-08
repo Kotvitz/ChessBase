@@ -5,6 +5,9 @@
 
 <%
 	int status = RegisterDao.register(obj);
+	String url = request.getRequestURL().toString();
+	String baseURL = url.substring(0, url.length() - request.getRequestURI().length()) 
+		+ request.getContextPath();
 	if (status > 0)
-		response.sendRedirect("http://localhost:8080/ChessBase");
+		response.sendRedirect(baseURL);
 %>
