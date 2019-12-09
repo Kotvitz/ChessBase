@@ -48,33 +48,3 @@
 	height: 23px;
 	width: 370px;
 }
-
-#main_panel .login_as
-{
-	margin-top: 15px;
-	margin-left: 180px;
-}
-
-#main_panel .login_as .label
-{
-	display: block;
-	margin-left: 15px;
-	float: left;
-	padding-top: 11px;
-}
-
-#main_panel .login_as table
-{
-	margin-left: 3px;
-}
-
-#main_panel .login_as table td
-{
-	padding-top: 10px;
-	padding-right: 10px;
-}
-
-#main_panel .login_button, #main_panel .register_link {
-	display: inline-block;
-    margin-left: 50px;
-}
