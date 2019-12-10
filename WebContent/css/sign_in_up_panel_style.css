@@ -1,24 +1,23 @@
 #page_content {
-    display: table;
-    width: 100%;
+	display: table;
+	width: 100%;
 }
 
 #page_content_inner {
-    display: table-row;
+	display: table-row;
 }
 
 #page_middle_content {
-    min-height: 330px;
-    height: auto !important;
-    width: 797px;
-    margin: 0px auto;
-    position: relative;
-    background: #FFF;
-    padding: 20px;
+	min-height: 330px;
+	height: auto !important;
+	width: 797px;
+	margin: 0px auto;
+	position: relative;
+	background: #FFF;
+	padding: 20px;
 }
 
-#main_panel
-{
+#main_panel {
 	background-position: 72px center;
 	min-height: 240px;
 	height: auto !important;
@@ -27,24 +26,25 @@
 	width: 537px;
 }
 
-#main_panel .login_field
-{
-	height:25px;
+#main_panel .login_field {
+	height: 25px;
 	margin-left: 34px;
 	margin-bottom: 17px;
 	text-align: right;
 }
 
-#main_panel .login_field .label
-{
+#main_panel .login_field .label {
 	float: left;
 }
 
-#main_panel .login_field input[type=text],
-#main_panel .login_field input[type=password]
-{
+#main_panel .login_field input[type=text], #main_panel .login_field input[type=password] {
 	display: inline-block;
 	border: solid 1px #BABABA;
 	height: 23px;
 	width: 370px;
+}
+
+#main_panel .login_button, #main_panel .register_link {
+	display: inline-block;
+	margin-left: 50px;
 }
