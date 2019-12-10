@@ -8,9 +8,11 @@
 	String url = request.getRequestURL().toString();
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length()) 
 			+ request.getContextPath();
-	if (status) {
-		session.setAttribute("session", "TRUE");
-		response.sendRedirect(baseURL + "/index.jsp");
+	if (LoginDao.validate(obj)) {
+		String p = baseURL + "/home.jsp";
+		if (LoginDao.isAdmin(obj))
+			p = baseURL + "/home_admin.jsp";
+		response.sendRedirect(p);
 	} else {
 		out.print("Wrong email or password!");
 	}
