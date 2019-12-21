@@ -4,9 +4,22 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>ChessBase - home</title>
+<link rel="stylesheet" href="css/home_style.css">
+<link rel="stylesheet" href="css/global_style.css">
 </head>
 <body>
-
+	<div class="main-wrapper">
+		<div id="page_header" class="pl-PL"></div>
+		<div id="page_top_menu" class="pl-PL">
+			<div id="top_menu" class="RadMenu">
+				<ul class="rmRootGroup rmHorizontal">
+					<li class="rmItem rmFirst"><a href="" title="Displays the user profile and allows you to modify it." class="rmLink rmRootLink"><span class="rmText">Your profile</span></a></li>
+					<li class="rmItem "><a href="" title="Go to the chess database." class="rmLink rmRootLink"><span class="rmText">Base</span></a></li>
+					<li class="rmItem rmLast"><a href="" title="Logs the user out of the system." class="rmLink rmRootLink"><span class="rmText">Log out</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
