@@ -10,12 +10,14 @@ public class RegisterDao {
 		int status = 0;
 		try {
 			Connection con = ConnectionProvider.getCon();
-			PreparedStatement ps = con.prepareStatement("INSERT INTO user VALUES(?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
+			PreparedStatement ps = con.prepareStatement("INSERT INTO user VALUES(?,?,?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
 			ps.setLong(1, u.getId());
-			ps.setString(2, u.getLogin());
-			ps.setString(3, u.getEmail());
-			ps.setString(4, u.getPassword());
-			ps.setBoolean(5, u.isAdmin());
+			ps.setString(2, u.getName());
+			ps.setString(3, u.getSurname());
+			ps.setString(4, u.getLogin());
+			ps.setString(5, u.getEmail());
+			ps.setString(6, u.getPassword());
+			ps.setBoolean(7, u.isAdmin());
 			status = ps.executeUpdate();
 			
 			try (ResultSet generatedKeys = ps.getGeneratedKeys()) {

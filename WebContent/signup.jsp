@@ -17,6 +17,14 @@
 						<span id="sign_up" class="page_title">Please fill in this form to create an account</span>
 						<div class="center_content">
 							<div class="login_field">
+								<span id="name_label" class="label">Name:<span class="req">*</span></span>
+								<input name="name" type="text" id="=text_ident" tabindex="1" required autocomplete="off"><br>
+							</div>
+							<div class="login_field">
+								<span id="surname_label" class="label">Surname:<span class="req">*</span></span>
+								<input name="surname" type="text" id="=text_ident" tabindex="1" required autocomplete="off"><br>
+							</div>
+							<div class="login_field">
 								<span id="login_label" class="label">Login:<span class="req">*</span></span>
 								<input name="login" type="text" id="=text_ident" tabindex="1" required autocomplete="off"><br>
 							</div>

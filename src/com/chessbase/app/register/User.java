@@ -3,7 +3,7 @@ package com.chessbase.app.register;
 public class User {
 	
 	private long id;
-	private String login, email, password;
+	private String name, surname, login, email, password;
 	private boolean admin;
 
 	public long getId() {
@@ -12,6 +12,22 @@ public class User {
 
 	public void setId(long id) {
 		this.id = id;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSurname() {
+		return surname;
+	}
+
+	public void setSurname(String surname) {
+		this.surname = surname;
 	}
 	
 	public String getLogin() {
