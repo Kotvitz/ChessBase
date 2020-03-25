@@ -10,6 +10,8 @@
 			+ request.getContextPath();
 	if (LoginDao.validate(obj)) {
 		String p = baseURL + "/home.jsp";
+		session.setAttribute("login", obj.getLogin());
+		session.setAttribute("password", obj.getPassword());
 		if (LoginDao.isAdmin(obj))
 			p = baseURL + "/home_admin.jsp";
 		response.sendRedirect(p);
