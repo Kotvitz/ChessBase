@@ -35,7 +35,7 @@
 									tabindex="5" class="buttonL">
 							</div>
 							<div id="register_link_container" class="register_link">
-								<a href="signup.jsp" style="color: #125bd0;">Sign up</a>
+								<a href="signup.jsp" style="color: #975624;">Sign up</a>
 							</div>
 						</div>
 					</div>

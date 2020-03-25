@@ -39,7 +39,7 @@
 
 #main_panel .login_field input[type=text], #main_panel .login_field input[type=password] {
 	display: inline-block;
-	border: solid 1px #BABABA;
+	border: solid 1px #F4C986;
 	height: 23px;
 	width: 370px;
 }
