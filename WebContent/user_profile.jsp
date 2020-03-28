@@ -69,6 +69,9 @@
 					</td>
 				</tr>
 			</table>
+			<div id="chpass_button_container" class="chpass_button">
+				<button id="butChpass" type="button">Change password</button>
+			</div>
 		</div>
 		<%
 			}
