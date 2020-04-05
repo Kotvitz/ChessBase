@@ -1,0 +1,26 @@
+#browser_panel {
+	background-position: 72px center;
+	min-height: 240px;
+	height: auto !important;
+	height: 240px;
+	padding: 20px 75px 20px 75px;
+	width: 537px;
+}
+
+#browser_panel .browser_row {
+	margin-left: 34px;
+	margin-bottom: 17px;
+	text-align: right;
+}
+
+#browser_panel .browser_row input[type=text] {
+	display: inline-block;
+	clear: both;
+	border: solid 1px #F4C986;
+	height: 23px;
+	width: 100%;
+}
+
+#browser_panel .browser_row .label {
+	float: left;
+}

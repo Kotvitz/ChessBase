@@ -1,0 +1,18 @@
+#page_content {
+	display: table;
+	width: 100%;
+}
+
+#page_content_inner {
+	display: table-row;
+}
+
+#page_middle_content {
+	min-height: 330px;
+	height: auto !important;
+	width: 797px;
+	margin: 0px auto;
+	position: relative;
+	background: #FFF;
+	padding: 20px;
+}
