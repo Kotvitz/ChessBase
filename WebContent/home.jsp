@@ -16,7 +16,7 @@
 				<ul class="rmRootGroup rmHorizontal">
 					<li class="rmItem rmFirst"><a href="/ChessBase/user_profile.jsp" title="Displays the user profile and allows you to modify it." class="rmLink rmRootLink"><span class="rmText">Your profile</span></a></li>
 					<li class="rmItem "><a href="/ChessBase/base.jsp" title="Go to the chess database." class="rmLink rmRootLink"><span class="rmText">Base</span></a></li>
-					<li class="rmItem rmLast"><a href="" title="Logs the user out of the system." class="rmLink rmRootLink"><span class="rmText">Log out</span></a></li>
+					<li class="rmItem rmLast"><a href="/ChessBase/logout.jsp" title="Logs the user out of the system." class="rmLink rmRootLink"><span class="rmText">Log out</span></a></li>
 				</ul>
 			</div>
 		</div>
