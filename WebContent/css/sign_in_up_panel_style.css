@@ -1,31 +1,3 @@
-#page_content {
-	display: table;
-	width: 100%;
-}
-
-#page_content_inner {
-	display: table-row;
-}
-
-#page_middle_content {
-	min-height: 330px;
-	height: auto !important;
-	width: 797px;
-	margin: 0px auto;
-	position: relative;
-	background: #FFF;
-	padding: 20px;
-}
-
-#main_panel {
-	background-position: 72px center;
-	min-height: 240px;
-	height: auto !important;
-	height: 240px;
-	padding: 100px 75px 20px 75px;
-	width: 537px;
-}
-
 #main_panel .login_field {
 	height: 25px;
 	margin-left: 34px;

@@ -7,6 +7,7 @@
 <title>ChessBase</title>
 <link rel="stylesheet" href="css/global_style.css">
 <link rel="stylesheet" href="css/sign_in_up_panel_style.css">
+<link rel="stylesheet" href="css/any_form_style.css">
 </head>
 <body>
 	<form id="sign_in_form" action="register_process.jsp">
