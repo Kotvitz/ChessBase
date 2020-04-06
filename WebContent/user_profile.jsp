@@ -12,6 +12,11 @@
 <link rel="stylesheet" href="css/user_profile_style.css">
 </head>
 <body>
+	<%
+		if (session == null || session.getAttribute("login") == null)
+			out.print("You are not logged in!");
+		else {
+	%>
 	<div class="main-wrapper">
 		<div id="page_header" class="pl-PL"></div>
 		<div id="page_top_menu" class="pl-PL">
@@ -77,5 +82,8 @@
 			}
 		%>
 	</div>
+	<%
+		}
+	%>
 </body>
 </html>
