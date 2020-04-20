@@ -29,7 +29,7 @@
 					<li class="rmItem "><a href="/ChessBase/base.jsp"
 						title="Go to the chess database." class="rmLink rmRootLink"><span
 							class="rmText">Base</span></a></li>
-					<li class="rmItem rmLast"><a href=""
+					<li class="rmItem rmLast"><a href="/ChessBase/logout.jsp"
 						title="Logs the user out of the system." class="rmLink rmRootLink"><span
 							class="rmText">Log out</span></a></li>
 				</ul>
@@ -69,12 +69,36 @@
 								</div>
 								<div class="browser_row clear"></div>
 							</div>
+							<%
+								boolean isAdmin = Boolean.FALSE == session.getAttribute("admin");
+								if (isAdmin) {
+							%>
+							<div class="center_content">
+								<div id="browse_button_container" class="browse_button" style="display: inline-block">
+									<input type="submit" value="Browse" id="butBrowse" tabindex="5"
+										class="buttonB">
+								</div>
+								<div id="update_button_container" class="update_button" style="display: inline-block">
+									<input type="submit" value="Update" id="butUpdate" tabindex="5"
+										class="buttonU">
+								</div>
+								<div id="delete_button_container" class="delete_button" style="display: inline-block">
+									<input type="submit" value="Delete" id="butDelete" tabindex="5"
+										class="buttonD">
+								</div>
+							</div>
+							<%
+								} else {
+							%>
 							<div class="center_content">
 								<div id="browse_button_container" class="browse_button">
 									<input type="submit" value="Browse" id="butBrowse" tabindex="5"
 										class="buttonB">
 								</div>
 							</div>
+							<%
+								}
+							%>
 						</div>
 					</div>
 				</div>

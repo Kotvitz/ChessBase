@@ -12,8 +12,7 @@
 		String p = baseURL + "/home.jsp";
 		session.setAttribute("login", obj.getLogin());
 		session.setAttribute("password", obj.getPassword());
-		if (LoginDao.isAdmin(obj))
-			p = baseURL + "/home_admin.jsp";
+		session.setAttribute("admin", obj.isAdmin());
 		response.sendRedirect(p);
 	} else {
 		out.print("Wrong email or password!");
