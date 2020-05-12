@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Base</title>
 <link rel="stylesheet" href="css/base_style.css">
 <link rel="stylesheet" href="css/home_style.css">
 <link rel="stylesheet" href="css/any_form_style.css">
@@ -35,75 +35,32 @@
 				</ul>
 			</div>
 		</div>
-		<form method="post" action="browse_result.jsp">
-			<div id="page_content">
-				<div id="page_content_inner">
-					<div id="page_middle_content">
-						<div id="browser_panel">
-							<span id="sign_up" class="page_title">Browse chess base
-								data</span>
-							<div class="center_content">
-								<div class="browser_row">
-									<span id="site_label" class="label">Site:</span> <input
-										name="site" type="text" id="=text_ident" tabindex="1"><br>
-								</div>
-								<div class="browser_row">
-									<span id="date_label" class="label">Date:</span> <input
-										name="date" type="text" id="=text_ident" tabindex="1"><br>
-								</div>
-								<div class="browser_row">
-									<span id="email_label" class="label">White:</span> <input
-										name="white" type="text" id="=text_ident" tabindex="1"><br>
-								</div>
-								<div class="browser_row">
-									<span id="black_label" class="label">Black:</span> <input
-										name="black" type="text" id="=text_ident" tabindex="1"><br>
-								</div>
-								<div class="browser_row">
-									<span id="result_label" class="label">Result:</span> <input
-										name="result" type="text" id="=text_ident" tabindex="1"><br>
-								</div>
-								<div class="browser_row">
-									<span id="moves_label" class="label">Moves:</span> <input
-										name="moves" type="text" id="=text_ident" tabindex="1"><br>
-								</div>
-								<div class="browser_row clear"></div>
-							</div>
-							<%
-								boolean isAdmin = Boolean.FALSE == session.getAttribute("admin");
-								if (isAdmin) {
-							%>
-							<div class="center_content">
-								<div id="browse_button_container" class="browse_button" style="display: inline-block">
-									<input type="submit" value="Browse" id="butBrowse" tabindex="5"
-										class="buttonB">
-								</div>
-								<div id="update_button_container" class="update_button" style="display: inline-block">
-									<input type="submit" value="Update" id="butUpdate" tabindex="5"
-										class="buttonU">
-								</div>
-								<div id="delete_button_container" class="delete_button" style="display: inline-block">
-									<input type="submit" value="Delete" id="butDelete" tabindex="5"
-										class="buttonD">
-								</div>
-							</div>
-							<%
-								} else {
-							%>
-							<div class="center_content">
-								<div id="browse_button_container" class="browse_button">
-									<input type="submit" value="Browse" id="butBrowse" tabindex="5"
-										class="buttonB">
-								</div>
-							</div>
-							<%
-								}
-							%>
-						</div>
-					</div>
+		<div id="page_content">
+			<div id="page_content_inner">
+				<span class="page_title">Choose what you want to do:</span>
+				<div id="base_panel">
+					<%
+						boolean isAdmin = Boolean.FALSE == session.getAttribute("admin");
+							if (isAdmin) {
+					%>
+					<ul>
+						<li><a href="browse_data.jsp">Browse data</a></li>
+						<li><a href="delete_game.jsp">Delete a game</a></li>
+						<li><a href="update_data.jsp">Update data</a></li>
+						<li><a href="add_new_game.jsp">Add a new game</a></li>
+					</ul>
+					<%
+						} else {
+					%>
+					<ul>
+						<li><a href="browse_data.jsp">Browse data</a></li>
+					</ul>
+					<%
+						}
+					%>
 				</div>
 			</div>
-		</form>
+		</div>
 	</div>
 	<%
 		}

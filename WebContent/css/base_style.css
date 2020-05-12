@@ -1,3 +1,13 @@
+#base_panel {
+    margin: 0 0 0px 40px;
+    font-size: 22px;
+    display: block;
+}
+
+#base_panel ul li a {
+	color: #975624;
+}
+
 #browser_panel {
 	background-position: 72px center;
 	min-height: 240px;
