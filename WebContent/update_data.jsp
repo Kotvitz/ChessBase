@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Browse a game</title>
+<title>Update a game data</title>
 <link rel="stylesheet" href="css/base_style.css">
 <link rel="stylesheet" href="css/home_style.css">
 <link rel="stylesheet" href="css/any_form_style.css">
@@ -35,44 +35,23 @@
 				</ul>
 			</div>
 		</div>
-		<form method="post" action="browse_result.jsp">
+		<form method="post" action="update_form.jsp">
 			<div id="page_content">
 				<div id="page_content_inner">
 					<div id="page_middle_content">
 						<div id="base_form_panel">
-							<span id="sign_up" class="page_title">Browse chess base
-								data</span>
+							<span id="sign_up" class="page_title">Enter a ID of the game whose details you want to update:</span>
 							<div class="center_content">
 								<div class="base_form_row">
-									<span id="site_label" class="label">Site:</span> <input
-										name="site" type="text" id="=text_ident" tabindex="1"><br>
-								</div>
-								<div class="base_form_row">
-									<span id="date_label" class="label">Date:</span> <input
-										name="date" type="text" id="=text_ident" tabindex="1"><br>
-								</div>
-								<div class="base_form_row">
-									<span id="email_label" class="label">White:</span> <input
-										name="white" type="text" id="=text_ident" tabindex="1"><br>
-								</div>
-								<div class="base_form_row">
-									<span id="black_label" class="label">Black:</span> <input
-										name="black" type="text" id="=text_ident" tabindex="1"><br>
-								</div>
-								<div class="base_form_row">
-									<span id="result_label" class="label">Result:</span> <input
-										name="result" type="text" id="=text_ident" tabindex="1"><br>
-								</div>
-								<div class="base_form_row">
-									<span id="moves_label" class="label">Moves:</span> <input
-										name="moves" type="text" id="=text_ident" tabindex="1"><br>
+									<span id="site_label" class="label">ID:</span> <input
+										name="site" type="text" id="=text_ident" tabindex="1" required><br>
 								</div>
 								<div class="base_form_row clear"></div>
 							</div>
 							<div class="center_content">
-								<div id="browse_button_container" class="browse_button">
-									<input type="submit" value="Browse" id="butBrowse" tabindex="5"
-										class="buttonB">
+								<div id="update_button_container" class="update_button">
+									<input type="submit" value="OK" id="butUpdate" tabindex="5"
+										class="buttonU">
 								</div>
 							</div>
 						</div>

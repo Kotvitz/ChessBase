@@ -8,7 +8,7 @@
 	color: #975624;
 }
 
-#browser_panel {
+#base_form_panel {
 	background-position: 72px center;
 	min-height: 240px;
 	height: auto !important;
@@ -17,13 +17,13 @@
 	width: 537px;
 }
 
-#browser_panel .browser_row {
+#base_form_panel .base_form_row {
 	margin-left: 34px;
 	margin-bottom: 17px;
-	text-align: right;
+	text-align: left;
 }
 
-#browser_panel .browser_row input[type=text] {
+#base_form_panel .base_form_row input[type=text] {
 	display: inline-block;
 	clear: both;
 	border: solid 1px #F4C986;
@@ -31,6 +31,6 @@
 	width: 100%;
 }
 
-#browser_panel .browser_row .label {
+##base_form_panel .base_form_row .label {
 	float: left;
 }
