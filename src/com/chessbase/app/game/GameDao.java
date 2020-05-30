@@ -79,20 +79,19 @@ public class GameDao {
 		return games;
 	}
 
-	public static void addGame(long id, String site, String date, String white, String black, String result, int moves,
-			String course) {
+	public static void addGame(Game game) {
 		try {
 			Connection con = ConnectionProvider.getCon();
 			PreparedStatement preparedStatement = con
-					.prepareStatement("INSERT INTO game VALUES (NULL, ?, ?, ?, ?, ?, ?, ?);");
-			preparedStatement.setLong(1, id);
-			preparedStatement.setString(2, site);
-			preparedStatement.setString(3, date);
-			preparedStatement.setString(4, white);
-			preparedStatement.setString(5, black);
-			preparedStatement.setString(6, result);
-			preparedStatement.setInt(7, moves);
-			preparedStatement.setString(8, course);
+					.prepareStatement("INSERT INTO game VALUES (?, ?, ?, ?, ?, ?, ?, ?);");
+			preparedStatement.setLong(1, game.getId());
+			preparedStatement.setString(2, game.getSite());
+			preparedStatement.setString(3, game.getDate());
+			preparedStatement.setString(4, game.getWhite());
+			preparedStatement.setString(5, game.getBlack());
+			preparedStatement.setString(6, game.getResult());
+			preparedStatement.setInt(7, game.getMoves());
+			preparedStatement.setString(8, game.getCourse());
 			preparedStatement.execute();
 		} catch (SQLException e) {
 			e.printStackTrace();

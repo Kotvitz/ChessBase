@@ -35,7 +35,7 @@
 				</ul>
 			</div>
 		</div>
-		<form method="post" action="add.jsp">
+		<form method="post" action="add_process.jsp">
 			<div id="page_content">
 				<div id="page_content_inner">
 					<div id="page_middle_content">
