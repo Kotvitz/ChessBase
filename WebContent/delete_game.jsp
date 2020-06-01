@@ -35,7 +35,7 @@
 				</ul>
 			</div>
 		</div>
-		<form method="post" action="delete.jsp">
+		<form method="post" action="delete_process.jsp">
 			<div id="page_content">
 				<div id="page_content_inner">
 					<div id="page_middle_content">

@@ -98,10 +98,59 @@ public class GameDao {
 		}
 	}
 
-	public static void deleteGame(long id) {
+	public static void deleteGame(Game game) {
+		List<Object> parameters = new ArrayList<>();
+		StringBuilder query = new StringBuilder("DELETE FROM game WHERE 1=1");
+		if (game.getId() != 0L) {
+			query.append(" AND id = ?");
+			parameters.add(game.getId());
+		}
+		if (game.getSite() != null) {
+			query.append(" AND site = ?");
+			parameters.add(game.getSite());
+		}
+
+		if (game.getDate() != null) {
+			query.append(" AND date = ?");
+			parameters.add(game.getDate());
+		}
+
+		if (game.getWhite() != null) {
+			query.append(" AND white = ?");
+			parameters.add(game.getWhite());
+		}
+
+		if (game.getBlack() != null) {
+			query.append(" AND black = ?");
+			parameters.add(game.getBlack());
+		}
+
+		if (game.getResult() != null) {
+			query.append(" AND result = ?");
+			parameters.add(game.getResult());
+		}
+
+		if (game.getMoves() != 0) {
+			query.append(" AND moves = ?");
+			parameters.add(game.getMoves());
+		}
+		
+		Connection con = ConnectionProvider.getCon();
+		PreparedStatement preparedStatement = null;
 		try {
-			Connection con = ConnectionProvider.getCon();
-			PreparedStatement preparedStatement = con.prepareStatement("DELETE FROM game WHERE id = " + id);
+			preparedStatement = con.prepareStatement(query.toString());
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		int i = 1;
+		for (Object parameter : parameters)
+			try {
+				preparedStatement.setObject(i++, parameter);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		
+		try {
 			preparedStatement.execute();
 		} catch (SQLException e) {
 			e.printStackTrace();
