@@ -35,7 +35,7 @@
 				</ul>
 			</div>
 		</div>
-		<form method="post" action="update_form.jsp">
+		<form method="post" action="update_selected_game.jsp">
 			<div id="page_content">
 				<div id="page_content_inner">
 					<div id="page_middle_content">
@@ -43,8 +43,8 @@
 							<span id="sign_up" class="page_title">Enter a ID of the game whose details you want to update:</span>
 							<div class="center_content">
 								<div class="base_form_row">
-									<span id="site_label" class="label">ID:</span> <input
-										name="site" type="text" id="=text_ident" tabindex="1" required><br>
+									<span id="id_label" class="label">ID:</span> <input
+										name="id" type="text" id="=text_ident" tabindex="1" required><br>
 								</div>
 								<div class="base_form_row clear"></div>
 							</div>

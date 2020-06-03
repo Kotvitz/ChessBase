@@ -17,17 +17,17 @@
 						<span id="sign_in" class="page_title">Chess base
 							application</span>
 						<div class="center_content">
-							<div class="login_field">
+							<div class="input_field">
 								<span id="login_label" class="label">Login:<span
 									class="req">*</span></span> <input name="login" type="text"
 									id="text_ident" tabindex="1" required autocomplete="off"><br>
 							</div>
-							<div class="login_field">
+							<div class="input_field">
 								<span id="pswd_label" class="label">Password:<span
 									class="req">*</span></span> <input name="password" type="password"
 									id="txtpswd" tabindex="2" required autocomplete="off"><br>
 							</div>
-							<div class="login_field clear"></div>
+							<div class="input_field clear"></div>
 						</div>
 						<div class="center_content">
 							<div id="login_button_container" class="login_button">

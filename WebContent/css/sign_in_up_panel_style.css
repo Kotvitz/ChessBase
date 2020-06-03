@@ -2,18 +2,18 @@ form {
     padding-top: 113px;
 }
 
-#main_panel .login_field {
+#main_panel .input_field {
 	height: 25px;
 	margin-left: 34px;
 	margin-bottom: 17px;
 	text-align: right;
 }
 
-#main_panel .login_field .label {
+#main_panel .input_field .label {
 	float: left;
 }
 
-#main_panel .login_field input[type=text], #main_panel .login_field input[type=password] {
+#main_panel .input_field input[type=text], #main_panel .input_field input[type=password] {
 	display: inline-block;
 	border: solid 1px #F4C986;
 	height: 23px;

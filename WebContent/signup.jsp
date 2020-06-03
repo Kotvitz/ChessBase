@@ -17,32 +17,32 @@
 					<div id="main_panel">
 						<span id="sign_up" class="page_title">Please fill in this form to create an account</span>
 						<div class="center_content">
-							<div class="login_field">
+							<div class="input_field">
 								<span id="name_label" class="label">Name:<span class="req">*</span></span>
 								<input name="name" type="text" id="=text_ident" tabindex="1" required autocomplete="off"><br>
 							</div>
-							<div class="login_field">
+							<div class="input_field">
 								<span id="surname_label" class="label">Surname:<span class="req">*</span></span>
 								<input name="surname" type="text" id="=text_ident" tabindex="1" required autocomplete="off"><br>
 							</div>
-							<div class="login_field">
+							<div class="input_field">
 								<span id="login_label" class="label">Login:<span class="req">*</span></span>
 								<input name="login" type="text" id="=text_ident" tabindex="1" required autocomplete="off"><br>
 							</div>
-							<div class="login_field">
+							<div class="input_field">
 								<span id="email_label" class="label">E-mail:<span class="req">*</span></span>
 								<input name="email" type="text" id="email_ident" tabindex="1" required autocomplete="off"><br>
 							</div>
-							<div class="login_field">
+							<div class="input_field">
 								<span id="pswd_label" class="label">Password:<span class="req">*</span></span>
 								<input name="password" type="password" id="txtpswd" tabindex="2" required autocomplete="off"><br>
 							</div>
-							<div class="login_field">
+							<div class="input_field">
 								<span id="pswdrep_label" class="label">Repeat password:<span class="req">*</span></span>
 								<input type="password" id="txtpswdrep" tabindex="2" required autocomplete="off"><br>
 								<span id="valReqPswdMatch" class="validator_error" style="color:Red;display:none;">The passwords must match!</span>
 							</div>
-							<div class="login_field clear"></div>
+							<div class="input_field clear"></div>
 						</div>
 						<div class="center_content">
 							<div id="sign_up_button_container" class="sign_up_button">
