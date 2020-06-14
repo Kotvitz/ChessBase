@@ -38,7 +38,7 @@
 		<%
 			String login = session.getAttribute("login").toString();
 			Connection con = ConnectionProvider.getCon();
-			PreparedStatement ps = con.prepareStatement("SELECT * FROM user where login=?");
+			PreparedStatement ps = con.prepareStatement("SELECT * FROM user WHERE login=?");
 			ps.setString(1, login);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
@@ -75,7 +75,7 @@
 				</tr>
 			</table>
 			<div id="chpass_button_container" class="chpass_button">
-				<button id="butChpass" type="button">Change password</button>
+				<button id="butChpass" type="button" onclick="window.location.href='/ChessBase/change_password.jsp'">Change password</button>
 			</div>
 		</div>
 		<%
